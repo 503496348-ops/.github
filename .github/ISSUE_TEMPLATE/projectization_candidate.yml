@@ -1,0 +1,57 @@
+name: Skill to Project Candidate
+description: Propose turning an internal Skill/workflow into a public, maintainable project.
+title: "[Projectization]: "
+labels:
+  - "type: projectization"
+  - "status: needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template only when a Skill or workflow may become an independent public project.
+        Do not include private customer data, credentials, internal server paths, or private chat links.
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill / workflow name
+      description: Name of the internal Skill, workflow, or tool.
+      placeholder: "example: product-quality-gate"
+    validations:
+      required: true
+  - type: textarea
+    id: external-problem
+    attributes:
+      label: External problem
+      description: What problem can an external user understand and solve with this project?
+      placeholder: "Describe the user, pain, and expected outcome."
+    validations:
+      required: true
+  - type: textarea
+    id: runnable-artifact
+    attributes:
+      label: Runnable artifact
+      description: What code, CLI, template, demo, or verification script already exists?
+      placeholder: "List files, commands, examples, or smoke tests."
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: Projectization gates
+      options:
+        - label: G1 independent value is clear without internal context
+        - label: G2 can run from a clean clone
+        - label: G3 has demo, fixture, test, or golden output
+        - label: G4 has clear maintainer and versioning path
+        - label: G5 can be sanitized and licensed publicly
+        - label: G6 has a credible sponsorship story
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks / blockers
+      description: Private dependencies, license risks, missing tests, unclear ownership, or high maintenance cost.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Paste real command output, links, screenshots, or audit results. Do not write "should work".

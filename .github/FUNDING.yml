@@ -1,0 +1,8 @@
+# GitHub displays this file in the repository Sponsor button.
+# Keep funding links at account level; product repositories inherit this file unless they override it.
+
+github:
+  - 503496348-ops
+
+custom:
+  - https://github.com/sponsors/503496348-ops

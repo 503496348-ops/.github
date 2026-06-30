@@ -3,3 +3,12 @@ contact_links:
   - name: Security Policy
     url: https://github.com/503496348-ops/.github/blob/main/SECURITY.md
     about: 安全问题请先阅读 Security Policy。
+  - name: Skill Projectization Standard
+    url: https://github.com/503496348-ops/.github/blob/main/docs/PROJECTIZATION.md
+    about: 判断 Skill 是否适合升级为可公开、可赞助 Project。
+  - name: Public Roadmap
+    url: https://github.com/503496348-ops/.github/blob/main/docs/ROADMAP.md
+    about: 查看公共治理与项目化路线图。
+  - name: Sponsorship Policy
+    url: https://github.com/503496348-ops/.github/blob/main/docs/SPONSORSHIP.md
+    about: 查看 GitHub Sponsors 用途和边界。
